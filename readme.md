@@ -1,4 +1,4 @@
-# filenamify [![Build Status](https://travis-ci.org/sindresorhus/filenamify.svg?branch=master)](https://travis-ci.org/sindresorhus/filenamify)
+# react-native-filenamify [![Build Status](https://travis-ci.org/sindresorhus/filenamify.svg?branch=master)](https://travis-ci.org/sindresorhus/filenamify)
 
 > Convert a string to a valid safe filename
 
@@ -8,14 +8,14 @@ On Unix-like systems `/` is reserved and [`<>:"/\|?*`](http://msdn.microsoft.com
 ## Install
 
 ```
-$ npm install filenamify
+$ npm install react-native-filenamify
 ```
 
 
 ## Usage
 
 ```js
-const filenamify = require('filenamify');
+const filenamify = require('react-native-filenamify');
 
 filenamify('<foo/bar>');
 //=> 'foo!bar'
@@ -31,9 +31,9 @@ filenamify('foo:"bar"', {replacement: '🐴'});
 
 Convert a string to a valid filename.
 
-### filenamify.path(path, [options])
+### ~~filenamify.path(path, [options])~~ (removed due to incompatibility with react-native)
 
-Convert the filename in a path a valid filename and return the augmented path.
+~~Convert the filename in a path a valid filename and return the augmented path.~~
 
 #### options
 

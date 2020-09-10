@@ -1,5 +1,4 @@
 'use strict';
-const path = require('path');
 const trimRepeated = require('trim-repeated');
 const filenameReservedRegex = require('filename-reserved-regex');
 const stripOuter = require('strip-outer');
@@ -34,11 +33,6 @@ const filenamify = (string, options = {}) => {
 	string = string.slice(0, typeof options.maxLength === 'number' ? options.maxLength : MAX_FILENAME_LENGTH);
 
 	return string;
-};
-
-filenamify.path = (filePath, options) => {
-	filePath = path.resolve(filePath);
-	return path.join(path.dirname(filePath), filenamify(path.basename(filePath), options));
 };
 
 module.exports = filenamify;

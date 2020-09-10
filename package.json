@@ -1,5 +1,5 @@
 {
-	"name": "filenamify",
+	"name": "react-native-filenamify",
 	"version": "4.1.0",
 	"description": "Convert a string to a valid safe filename",
 	"license": "MIT",
@@ -26,7 +26,6 @@
 		"file",
 		"name",
 		"string",
-		"path",
 		"filepath",
 		"convert",
 		"valid",

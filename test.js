@@ -21,10 +21,6 @@ test('filnamify()', t => {
 	t.is(filenamify('c/n', {replacement: 'con'}), 'cconn');
 });
 
-test('filenamify.path()', t => {
-	t.is(path.basename(filenamify.path(path.join(__dirname, 'foo:bar'))), 'foo!bar');
-});
-
 test('filenamify length', t => {
 	// Basename length: 152
 	const filename = 'this/is/a/very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_very_long_filename.txt';
